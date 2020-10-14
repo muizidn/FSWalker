@@ -107,7 +107,8 @@
 	[[NSUserDefaults standardUserDefaults] registerDefaults:defaults];
 	
 	// Configure and show the window
-	[window addSubview:[navigationController view]];
+    [window setRootViewController:navigationController];
+//	[window addSubview:[navigationController view]];
 	[window makeKeyAndVisible];
     
     [self displayReadableFiles];
